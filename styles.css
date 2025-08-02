@@ -1,0 +1,88 @@
+/* styles.css */
+html{
+    background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnRmbmF0b3N4YXdmaWd0MDc1Nmh2YTVuNmttZWM5aDAzeXF1cW1maCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wwg1suUiTbCY8H8vIA/giphy.gif);
+    color:darkred;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Punk Typewriter', sans-serif;
+    font-size: larger;
+}
+
+h1 {
+    text-shadow: #CCFF00 0px 0px 5px,
+                 #CCFF00 0px 0px 10px,
+                 #CCFF00 0px 0px 15px;
+    font-family: 'Meoww', sans-serif;
+    font-size: 2.4em;
+    text-align: center;
+    margin-top: 20px;
+}
+h2{
+    font-family: 'h Higlitch', sans-serif;
+    text-align: center;
+    font-size: 2em;
+}
+p{
+    font-size: 1.8em;
+    line-height: 1.5;
+}
+#about {
+
+    margin: 2em auto;
+}
+#projects h2{
+    color:FF00FF;
+    text-shadow: 0 0 5px #CCFF00,
+                 0 0 10px #CCFF00,
+                 0 0 15px #CCFF00;
+}
+#projects li:hover {
+    color: silver;
+    text-shadow: 0 0 3px #f439f1,
+                 0 0 5px #f439f1,
+                 0 0 10px #f439f1,
+                 0 0 15px #f439f1;
+    transition: color 0.3s ease-in-out, text-shadow 0.8s ease-in-out;
+}
+#projects li{
+    color: magenta;
+    text-shadow: 0 0 5px #CCFF00,
+                 0 0 10px #CCFF00,
+                 0 0 15px #CCFF00;
+    text-decoration: none;
+    font-family: 'Glitch Goblin', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    a{
+    color: magenta;
+    text-decoration: none;
+    font-family: 'Glitch Goblin', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    &:hover {
+        color: silver;
+    }
+}}
+footer{
+    font-family: 'Lunar Escape', sans-serif;
+    color:#f439f1;
+    position: fixed;
+    bottom: 7px;
+    text-shadow: 0 0 7px crimson,
+                 0 0 10px crimson,
+                 0 0 15px crimson;
+}
+footer:hover{
+    color: darkgoldenrod;
+}
+footer::after{
+    font-family: 'Lunar Escape', sans-serif;
+    content:"© 2025 William Perrigoue";
+    text-align: right;
+    position: fixed;
+    bottom: 7px;
+    width:97.5%;
+    display: block;
+}
