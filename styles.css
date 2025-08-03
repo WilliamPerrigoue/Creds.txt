@@ -69,7 +69,9 @@ p{
         color: silver;
     }
 }}
-footer{:hover{
+footer{
+    text-align: center;
+    &:hover{
     color: darkgoldenrod;
     text-shadow: 0 0 7px crimson,
                  0 0 10px crimson,
@@ -86,13 +88,14 @@ footer{:hover{
 }
 footer:hover{
     filter: brightness(2) saturate(10%) invert(90%) sepia(100%) saturate(0%) hue-rotate(180deg) brightness(44%) contrast(100%);
+    transition: filter 1.3s ease-in-out;
 }
 footer::after {
     font-family: 'Lunar Escape', sans-serif;
     content:"© 2025 William Perrigoue";
     text-align: right;
     position: fixed;
-    bottom: 7px;
+    bottom: 4px;
     width:97.5%;
     display: block;
 }
