@@ -24,7 +24,11 @@ h2{
 }
 p{
     font-size: 1.8em;
-    line-height: 1.5;
+    line-height: 108%;
+    margin: 17px;
+    text-shadow: 0 0 5px #ffe5c1,
+                 0 0 10px #ffe5c1,
+                 0 0 15px #ffe5c1;
 }
 #about {
 
@@ -65,19 +69,25 @@ p{
         color: silver;
     }
 }}
-footer{
+footer{:hover{
+    color: darkgoldenrod;
+    text-shadow: 0 0 7px crimson,
+                 0 0 10px crimson,
+                 0 0 15px crimson;
+    transition: color 0.3s ease-in-out, text-shadow 0.8s ease-in-out;
+}
     font-family: 'Lunar Escape', sans-serif;
-    color:#f439f1;
+    color: #CCEEFF;
     position: fixed;
-    bottom: 7px;
+    bottom: 1px;
     text-shadow: 0 0 7px crimson,
                  0 0 10px crimson,
                  0 0 15px crimson;
 }
 footer:hover{
-    color: darkgoldenrod;
+    filter: brightness(2) saturate(10%) invert(90%) sepia(100%) saturate(0%) hue-rotate(180deg) brightness(44%) contrast(100%);
 }
-footer::after{
+footer::after {
     font-family: 'Lunar Escape', sans-serif;
     content:"© 2025 William Perrigoue";
     text-align: right;
