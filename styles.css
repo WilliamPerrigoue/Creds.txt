@@ -7,7 +7,9 @@ html{
     font-family: 'Punk Typewriter', sans-serif;
     font-size: larger;
 }
-
+a {
+    padding-left: 4px;
+}
 h1 {
     text-shadow: #CCFF00 0px 0px 5px,
                  #CCFF00 0px 0px 10px,
@@ -86,7 +88,7 @@ footer{
                  0 0 10px crimson,
                  0 0 15px crimson;
 }
-footer:hover{
+footer a:hover, iframe:hover{
     filter: brightness(2) saturate(10%) invert(90%) sepia(100%) saturate(0%) hue-rotate(180deg) brightness(44%) contrast(100%);
     transition: filter 1.3s ease-in-out;
 }
