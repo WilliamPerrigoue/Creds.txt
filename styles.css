@@ -4,11 +4,13 @@ html{
     color:darkred;
     background-attachment: fixed;
     background-position: center;
+    
     font-family: 'Punk Typewriter', sans-serif;
     font-size: larger;
 }
-a {
-    padding-left: 4px;
+img{
+    width: 84px;
+    height: 84px;
 }
 h1 {
     text-shadow: #CCFF00 0px 0px 5px,
@@ -32,12 +34,28 @@ p{
                  0 0 10px #ffe5c1,
                  0 0 15px #ffe5c1;
 }
+#links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row;
+}
+#links a{
+    display: inline-block;
+    line-height: 0;
+}
+#links a img{
+    display: block;
+    transform-origin: center;
+}
+#links iframe{
+    display: block;
+}
 #about {
-
     margin: 2em auto;
 }
 #projects h2{
-    color:FF00FF;
+    color:#FF00FF;
     text-shadow: 0 0 5px #CCFF00,
                  0 0 10px #CCFF00,
                  0 0 15px #CCFF00;
@@ -51,10 +69,9 @@ p{
     transition: color 0.3s ease-in-out, text-shadow 0.8s ease-in-out;
 }
 #projects li{
+    display:flex;
     color: magenta;
-    text-shadow: 0 0 5px #CCFF00,
-                 0 0 10px #CCFF00,
-                 0 0 15px #CCFF00;
+    text-shadow: 0 0 5px #CCFF00, 0 0 10px #CCFF00, 0 0 15px #CCFF00;
     text-decoration: none;
     font-family: 'Glitch Goblin', sans-serif;
     font-weight: bold;
@@ -71,33 +88,33 @@ p{
         color: silver;
     }
 }}
-footer{
-    text-align: center;
-    &:hover{
-    color: darkgoldenrod;
-    text-shadow: 0 0 7px crimson,
-                 0 0 10px crimson,
-                 0 0 15px crimson;
-    transition: color 0.3s ease-in-out, text-shadow 0.8s ease-in-out;
+a:hover{
+    transform: scaleX(-1);
 }
-    font-family: 'Lunar Escape', sans-serif;
-    color: #CCEEFF;
-    position: fixed;
-    bottom: 1px;
-    text-shadow: 0 0 7px crimson,
-                 0 0 10px crimson,
-                 0 0 15px crimson;
-}
-footer a:hover, iframe:hover{
-    filter: brightness(2) saturate(10%) invert(90%) sepia(100%) saturate(0%) hue-rotate(180deg) brightness(44%) contrast(100%);
+iframe:hover, a:hover{
+    filter: brightness(2) saturate(10%) invert(90%) sepia(100%) saturate(0%) hue-rotate(180deg) brightness(1.5) contrast(100%);
     transition: filter 1.3s ease-in-out;
 }
-footer::after {
+footer {
+    font-family: 'Lunar Escape',
+            sans-serif;
+        color: #CCEEFF;
+        bottom: 1px;
+        text-shadow: 0 0 7px crimson,
+            0 0 10px crimson,
+            0 0 15px crimson;
+    &:hover {
+        color: darkgoldenrod;
+        text-shadow: 0 0 7px crimson,
+            0 0 10px crimson,
+            0 0 15px crimson;
+        transition: color 1.3s ease-in-out, text-shadow 0.8s ease-in-out;
+}}
+
+footer:after{
     font-family: 'Lunar Escape', sans-serif;
     content:"© 2025 William Perrigoue";
-    text-align: right;
-    position: fixed;
+    position:fixed;
     bottom: 4px;
-    width:97.5%;
     display: block;
 }
