@@ -4,13 +4,13 @@ html{
     color:darkred;
     background-attachment: fixed;
     background-position: center;
-    
     font-family: 'Punk Typewriter', sans-serif;
     font-size: larger;
 }
+
 img{
-    width: 84px;
-    height: 84px;
+    width: 4rem;
+    height: 4rem;
 }
 h1 {
     text-shadow: #CCFF00 0px 0px 5px,
@@ -32,13 +32,14 @@ p{
     margin: 17px;
     text-shadow: 0 0 5px #ffe5c1,
                  0 0 10px #ffe5c1,
-                 0 0 15px #ffe5c1;
+                 0 0 15px #ffe5c1,
+                 0 0 20px #ffe5c1;
 }
 #links {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-flow: row;
+    flex-flow:wrap;
 }
 #links a{
     display: inline-block;
@@ -54,6 +55,25 @@ p{
 #about {
     margin: 2em auto;
 }
+#projectpage{
+    font-size:small;
+    color:darkolivegreen;
+}
+#projectgrid {
+    color:coral;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
+    gap: 20px;
+    align-content: start;
+    min-height: 40vh;
+    padding: 0 16px;
+    margin: 0;
+    a{
+        color:cornflowerblue;
+    }
+}
 #projects h2{
     color:#FF00FF;
     text-shadow: 0 0 5px #CCFF00,
@@ -62,16 +82,13 @@ p{
 }
 #projects li:hover {
     color: silver;
-    text-shadow: 0 0 3px #f439f1,
-                 0 0 5px #f439f1,
-                 0 0 10px #f439f1,
-                 0 0 15px #f439f1;
     transition: color 0.3s ease-in-out, text-shadow 0.8s ease-in-out;
 }
 #projects li{
     display:flex;
+    justify-content: flex-start;
     color: magenta;
-    text-shadow: 0 0 5px #CCFF00, 0 0 10px #CCFF00, 0 0 15px #CCFF00;
+    text-shadow: 0 0 5px #CCFF00, 0 0 10px #CCFF00, 0 0 20px #CCFF00, 0 0 30px #CCFF00;
     text-decoration: none;
     font-family: 'Glitch Goblin', sans-serif;
     font-weight: bold;
@@ -86,14 +103,12 @@ p{
     text-decoration-line: underline;
     &:hover {
         color: silver;
+        filter: brightness(1.4);
     }
 }}
-a:hover{
-    transform: scaleX(-1);
-}
 iframe:hover, a:hover{
-    filter: brightness(2) saturate(10%) invert(90%) sepia(100%) saturate(0%) hue-rotate(180deg) brightness(1.5) contrast(100%);
-    transition: filter 1.3s ease-in-out;
+    filter: brightness(3) saturate(10%) invert(90%) sepia(100%) saturate(0%) hue-rotate(180deg) brightness(1.5) contrast(100%);
+    transition: 1.3s ease-in-out;
 }
 footer {
     font-family: 'Lunar Escape',
@@ -113,7 +128,7 @@ footer {
 
 footer:after{
     font-family: 'Lunar Escape', sans-serif;
-    content:"© 2025 William Perrigoue";
+    content: "© 2025 William Perrigoue";
     position:fixed;
     bottom: 4px;
     display: block;
