@@ -1,0 +1,52 @@
+html{
+    font-family: 'Bygonest Typewriter', sans-serif;
+    font-size: 10pt;
+}
+p{
+    text-align: left;
+}
+div a{
+    color:antiquewhite;
+    text-shadow: gray 0 0 12px, purple 0 0 16px, floralwhite 0 0 7px;
+    filter:brightness(4.8);
+}
+div a:hover{
+    filter:none;
+}
+ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.75rem;
+    font-size: larger;
+}
+li{
+    color:aquamarine;
+    text-shadow: red 0 0 7px, blue 0 0 17px, yellow 0 0 22px;
+}
+h2{
+    color:lightsteelblue;
+    text-shadow: red 0 0 7px, blue 0 0 17px, yellow 0 0 22px;
+    font-size: 40pt;
+    font-family: 'Hard Punk Gothik', sans-serif;
+}
+h3{
+    text-decoration:line-through;
+    font-size: 22pt;
+    font-weight: 1000;
+}
+h4, #education p{
+    color:aliceblue;
+}
+h5{
+    color:aliceblue;
+    text-shadow: white 0 0 22px, blue 0 0 12px, silver 0 0 45px;
+}
+.contact {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+#professionalSummary p{
+    color:goldenrod;
+    text-shadow: red 0 0 7px, blue 0 0 17px, yellow 0 0 22px;
+}

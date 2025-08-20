@@ -4,10 +4,18 @@
 @import url('https://fonts.cdnfonts.com/css/h-higlitch');
 @import url('https://fonts.cdnfonts.com/css/meoww');
 @import url('https://fonts.cdnfonts.com/css/punk-typewriter');
+@import url('https://fonts.cdnfonts.com/css/bygonest-typewriter');
+@import url('https://fonts.cdnfonts.com/css/hard-punk-gothik');
+
 html{
     background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnRmbmF0b3N4YXdmaWd0MDc1Nmh2YTVuNmttZWM5aDAzeXF1cW1maCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wwg1suUiTbCY8H8vIA/giphy.gif);
     color:darkred;
-    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    min-width: 100%;
+    background-attachment: scroll;
+    background-size: auto;
     background-position: center;
     font-family: 'Punk Typewriter', sans-serif;
     font-size: larger;
